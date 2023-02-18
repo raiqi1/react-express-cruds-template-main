@@ -29,7 +29,7 @@ const Edit = () => {
   const updateProduct = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/product/`+productId, {
+      await axios.patch(`http://localhost:5000/product/`+productId, {
         name,
         price,
         stock,
